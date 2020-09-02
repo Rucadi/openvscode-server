@@ -189,6 +189,17 @@ export interface IProductConfiguration {
 	readonly commonlyUsedSettings?: string[];
 	readonly aiGeneratedWorkspaceTrust?: IAiGeneratedWorkspaceTrust;
 	readonly gitHubEntitlement?: IGitHubEntitlement;
+
+	readonly gitpodPreview?: IGitpodPreviewConfiguration;
+}
+
+export interface IGitpodPreviewConfiguration {
+	host: string;
+	log?: {
+		analytics?: boolean;
+		metrics?: boolean;
+		errorReports?: boolean;
+	};
 }
 
 export interface ITunnelApplicationConfig {

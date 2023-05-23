@@ -190,6 +190,7 @@ export interface IProductConfiguration {
 	readonly aiGeneratedWorkspaceTrust?: IAiGeneratedWorkspaceTrust;
 	readonly gitHubEntitlement?: IGitHubEntitlement;
 
+	readonly segmentKey: string;
 	readonly gitpodPreview?: IGitpodPreviewConfiguration;
 }
 
